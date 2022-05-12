@@ -401,7 +401,6 @@
   text-decoration: underline;
 }
 
-@use "../css/"as *;
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -820,6 +819,10 @@
           box-shadow: unset;
   background-color: transparent;
   border-color: #ff2c9c;
+}
+
+.navbar-area .navbar .container-fluid .navbar-collapse .others-options .btn-primary:hover::before {
+  width: 0;
 }
 
 .navbar-area .navbar .container-fluid .navbar-collapse .others-options .btn-primary::before {

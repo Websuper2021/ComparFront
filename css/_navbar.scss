@@ -181,6 +181,9 @@
                             box-shadow: unset;
                             background-color: transparent;
                             border-color: #ff2c9c;
+                            &::before{
+                                width: 0;
+                            }
                             
                         }
                         &::before {
