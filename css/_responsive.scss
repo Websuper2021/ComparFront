@@ -1,0 +1,172 @@
+// max-width 1190px and less
+
+@media only screen and (max-width: 1199px) {
+
+    // header
+    .hero-banner {
+        .d-table {
+            .d-table-cell {
+                .text-center {
+                    h1 {
+                        font-size: 50px;
+                    }
+
+                    p {
+                        margin-bottom: 15px;
+                        font-size: 15px;
+                    }
+
+                    .btn {
+                        padding: 10px 24px;
+
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    //our work
+    .ptb-100 .section-title h2 {
+
+        font-size: 40px;
+    }
+
+    //contact
+    .contact-info-box {
+        text-align: center !important;
+        padding: 30px !important;
+
+        .icon {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+// max-width 767px and less
+@media only screen and (max-width:767px) {
+
+    //  navbar
+    .navbar-collapse {
+        .navbar-nav {
+            display: none;
+        }
+    }
+
+    // header
+    .hero-banner {
+        .d-table {
+            .d-table-cell {
+                .text-center {
+                    span {
+                        font-size: 14px !important;
+                    }
+
+                    h1 {
+                        font-size: 30px !important;
+                        margin-top: 0;
+                    }
+
+                    p {
+                        margin-bottom: 15px !important;
+                        font-size: 15px !important;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //contact
+    .contact-info-area .col-lg-4 .contact-info-box {
+        .icon {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 25px;
+            position: relative;
+            left: 0;
+            top: 0;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+
+
+    //get in touch
+    .contact-form {
+        h2 {
+            font-size: 26px !important;
+        }
+    }
+
+    //subscribe
+    .ptb-100 .newsletter-area .newsletter-inner-area {
+        padding: 50px 20px;
+
+        .newsletter-content {
+            h2 {
+                font-size: 25px;
+            }
+          
+        }
+        form{
+            button{
+                padding: 0 20px !important;
+            }
+        }
+    }
+
+
+
+
+    // footer
+    .footer-area {
+        padding-top: 60px;
+    }
+
+
+}
+
+@media only screen and (max-width:992px) {
+    .col-lg-3 {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+
+    //our work
+    .ptb-100 .section-title h2 {
+
+        font-size: 50px;
+    }
+
+    .single-case-studies {
+        min-height: 400px !important;
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+
+    // footer
+    .col-lg-3 {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+
+    .footer-area .single-footer-widget h3 {
+        font-size: 19px;
+    }
+
+}

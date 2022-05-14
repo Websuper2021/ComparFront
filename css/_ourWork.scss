@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+.work-process-area {
+    overflow: hidden;
+}
+
+.ptb-100 {
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    .section-title {
+        margin-bottom: 70px;
+        text-align: center;
+        margin: -5px auto 60px;
+        max-width: 720px;
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 50px;
+            font-weight: 700;
+            font-family: Saira, sans-serif;
+            color: #18181b;
+            margin-top: 0;
+            line-height: 1.2;
+        }
+
+        p {
+            margin: 0 auto;
+            max-width: 650px;
+            line-height: 1.8;
+            font-size: 17px;
+            color: #646464;
+        }
+    }
+
+    .work-process {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        max-width: 995px;
+        margin: 0 auto;
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .work-process-list {
+            .single-work-process {
+                position: absolute;
+                .icon {
+                    background: transparent;
+                    color: #ff3389;
+                    width: 95px;
+                    height: 95px;
+                    line-height: 102px;
+                    font-size: 40px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 1;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        background: #ff3389;
+                        border-radius: 50%;
+                        opacity: .18;
+                    }
+                }
+
+                &:first-child {
+                    left: 10%;
+                    top: 20px;
+                }
+
+                &:nth-child(2) {
+                    left: auto;
+                    right: 10%;
+                    top: 20px;
+
+                    .icon {
+                        background: transparent;
+                        color: #07ee7f;
+
+                        &::before {
+                            background: #07ee7f;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    right: 0;
+                    left: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    .icon {
+                        background: transparent;
+                        color: #ff650b;
+
+                        &::before {
+                            background: #ff650b
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    left: auto;
+                    right: 10%;
+                    bottom: 5%;
+                    top: auto;
+
+                    .icon {
+                        background: transparent;
+                        color: #9333ff;
+                        &::before{
+                            background: #9333ff;
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    left: 10%;
+                    top: auto;
+                    bottom: 5%;
+                }
+
+                &:nth-child(6) {
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+               
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                    font-family: Saira, sans-serif;
+                    color: #18181b;
+                    line-height: 1.2;
+                }
+
+                span {
+                    display: block;
+                    color: #646464;
+                    font-size: 14px;
+                }
+            }
+        }
+        img.circle-image {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -10px;
+            z-index: -1;
+        }
+    
+        .rotateme {
+            animation-name: rotateme;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes rotateme{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+    }
+    
+}
