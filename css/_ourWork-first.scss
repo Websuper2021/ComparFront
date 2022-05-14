@@ -1,6 +1,9 @@
+$purple: #c152c9;
+$gradient-color: #8c4b91;
 * {
     box-sizing: border-box;
 }
+
 
 .mt-40:first-child,
 .mt-40:nth-child(3) {
@@ -12,7 +15,6 @@
 }
 
 .single-case-studies {
-    margin-top: 40px;
     background-image: url(../images/CaseStudy1.jpg);
     margin-bottom: 30px;
     border-radius: 5px;
@@ -22,6 +24,11 @@
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    &:hover{
+        .shape{
+            top: 55%;
+        }
+    }
 
 
     .content {
@@ -31,6 +38,7 @@
         padding: 30px;
         background: transparent;
         z-index: 2;
+     
 
         span {
             display: block;
@@ -84,7 +92,7 @@
         font-size: 14px;
 
         background-color: #fff;
-        border: 1px solid #ff2c9c;
+        border: 1px solid $purple;
 
         &:hover {
             color: #fff;
@@ -126,6 +134,8 @@
         img {
             max-width: 100%;
             vertical-align: middle;
+            transition: all .2s ease;
+         
         }
     }
 
@@ -138,12 +148,12 @@
     .btn-primary {
         color: #fff;
         background-color: #fff;
-        border: 1px solid #ff2c9c;
+        border: 1px solid $purple;
 
         &:hover {
-            color: #ff2c9c;
+            color: $purple;
             background-color: transparent;
-            border-color: #ff2c9c;
+            border-color: $gradient-color;
 
             &::before {
                 width: 0;
@@ -160,7 +170,7 @@
             margin: 0 auto;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+            background: $gradient-color;
             z-index: -1;
             transition: all .6s ease;
         }

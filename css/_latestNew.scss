@@ -1,3 +1,5 @@
+$purple: #c152c9;
+$gradient-color: #8c4b91;
 * {
     box-sizing: border-box;
 }
@@ -71,7 +73,7 @@
                             transition: all .6s ease;
 
                             a {
-                                background: #ff2c9c;
+                                background: $purple;
                                 color: #fff;
                                 padding: 9px 28px;
                                 display: block;
@@ -83,7 +85,7 @@
                         padding: 30px;
 
                         .date {
-                            color: #ff2c9c;
+                            color: $purple;
                             display: block;
                             text-transform: uppercase;
                             font-size: 14px;
@@ -108,7 +110,7 @@
                                 transition: all .6s ease;
 
                                 &:hover {
-                                    color: #ff2c9c;
+                                    color: $purple;
 
                                 }
 
@@ -134,7 +136,7 @@
 
                             &:hover {
                                 outline: 0 !important;
-                                color: #ff2c9c;
+                                color: $purple;
 
                             }
 
@@ -160,7 +162,7 @@
 
                                 &:hover {
                                     outline: 0 !important;
-                                    color: #ff2c9c;
+                                    color: $purple;
 
                                 }
                             }
@@ -197,8 +199,8 @@
         }
        
         .active span {
-            background: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00) !important;
-            border: 1px solid #ff2c9c !important;
+            background:$gradient-color !important;
+            border: 1px solid $purple !important;
         }
 
 

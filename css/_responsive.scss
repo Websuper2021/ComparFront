@@ -1,5 +1,3 @@
-// max-width 1190px and less
-
 @media only screen and (max-width: 1199px) {
 
     // header
@@ -50,10 +48,54 @@
     }
 }
 
-// max-width 767px and less
+@media only screen and (max-width:992px) {
+    .col-lg-3 {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+
+    //our work
+    .ptb-100 .section-title h2 {
+
+        font-size: 50px;
+    }
+
+    .single-case-studies {
+        min-height: 400px !important;
+    }
+
+
+    //contactUs
+    .section-title {
+        h2 {
+            font-size: 32px !important;
+        }
+    }
+
+}
+
+
 @media only screen and (max-width:767px) {
 
-    //  navbar
+    .ptb-100 {
+        padding-bottom: 70px !important;
+        padding-top: 70px !important;
+    }
+
+    // our works-first
+    .single-case-studies .content {
+        h3 {
+            font-size: 20px;
+            margin: 8px 0 0;
+        }
+    }
+
+    .mt-40:nth-child(5),
+    .mt-40:first-child {
+        margin-top: 0 !important;
+    }
+
+    // navbar
     .navbar-collapse {
         .navbar-nav {
             display: none;
@@ -102,8 +144,6 @@
         }
     }
 
-
-
     //get in touch
     .contact-form {
         h2 {
@@ -119,43 +159,73 @@
             h2 {
                 font-size: 25px;
             }
-          
+
         }
-        form{
-            button{
+
+        form {
+            button {
                 padding: 0 20px !important;
             }
         }
     }
 
+    //contactUs
+    .contact-cta-box {
+        margin: 0 auto !important;
+        padding: 25px !important;
+        text-align: center !important;
+    }
 
+    .contact-cta-box .btn {
+        position: relative !important;
+        right: 0 !important;
+        top: unset !important;
+        transform: unset !important;
+        margin-top: 15px !important;
+    }
+
+    .funfact {
+        margin-bottom: 30px !important;
+
+        h3 {
+            font-size: 27px !important;
+            margin-bottom: 0 !important;
+        }
+    }
+
+
+    // latestNew
+    .container {
+        max-width: 720px !important;
+
+        .section-title {
+            margin: -5px auto 30px !important;
+
+            .blog-post-content {
+                h3 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
 
 
     // footer
     .footer-area {
         padding-top: 60px;
+
+        .single-footer-widget {
+            margin-bottom: 30px;
+        }
     }
 
 
 }
 
-@media only screen and (max-width:992px) {
-    .col-lg-3 {
-        flex: 0 0 auto !important;
-        width: 50% !important;
-    }
-
-    //our work
-    .ptb-100 .section-title h2 {
-
-        font-size: 50px;
-    }
-
-    .single-case-studies {
-        min-height: 400px !important;
-    }
-
-}
 
 @media only screen and (max-width:576px) {
 
@@ -168,5 +238,22 @@
     .footer-area .single-footer-widget h3 {
         font-size: 19px;
     }
+
+    .ptb-100 {
+        padding-bottom: 50px !important;
+        padding-top: 50px !important;
+    }
+
+    //latestNew
+    .section-title {
+        h2 {
+            font-size: 26px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+    }
+
 
 }

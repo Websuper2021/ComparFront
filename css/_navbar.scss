@@ -1,3 +1,6 @@
+$purple: #c152c9;
+$gradient-color: #8c4b91;
+
 * {
     box-sizing: border-box;
 }
@@ -97,7 +100,7 @@
                             &::before {
                                 bottom: -5px;
                                 width: 0;
-                                background: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+                                background:$gradient-color;
                                 height: 3px;
                                 transition: all .6s ease;
                                 left: 1px;
@@ -216,7 +219,7 @@
                     .btn-primary {
                         color: #fff;
                         background-color: #fff;
-                        border: 1px solid #ff2c9c;
+                        border: 1px solid $purple;
                         transition: all .6s ease;
                         position: relative;
                         text-transform: capitalize;
@@ -224,10 +227,10 @@
                         font-weight: 600;
 
                         &:hover {
-                            color: #ff2c9c;
+                            color: $purple;
                             box-shadow: unset;
                             background-color: transparent;
-                            border-color: #ff2c9c;
+                            border-color: $purple;
 
                             &::before {
                                 width: 0;
@@ -244,7 +247,7 @@
                             margin: 0 auto;
                             width: 100%;
                             height: 100%;
-                            background: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+                            background: $gradient-color;
                             z-index: -1;
                             transition: all .6s ease;
                         }
