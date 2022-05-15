@@ -46,6 +46,25 @@
             margin-bottom: 20px !important;
         }
     }
+
+    //about
+    .cta-area-two {
+        .container {
+            .cta-content {
+                h3 {
+                    font-size: 50px;
+                }
+            }
+        }
+
+    }
+
+    //footer
+    .footer-area .single-footer-widget h3 {
+        font-size: 20px;
+    }
+
+
 }
 
 @media only screen and (max-width:992px) {
@@ -54,6 +73,10 @@
         width: 50% !important;
     }
 
+    .ptb-100 {
+        padding-bottom: 70px !important;
+        padding-top: 70px !important;
+    }
     //our work
     .ptb-100 .section-title h2 {
 
@@ -72,15 +95,36 @@
         }
     }
 
+    //about
+    .cta-area-two {
+        .container {
+            .cta-content {
+                h3 {
+                    font-size: 35px;
+                }
+            }
+            .cta-btn-box{
+                .custom-btn{
+
+                padding: 15px 30px ;
+                font-size: 15px;
+            }
+
+            }
+        }
+
+    }
+
 }
 
 
 @media only screen and (max-width:767px) {
 
     .ptb-100 {
-        padding-bottom: 70px !important;
-        padding-top: 70px !important;
+        padding-bottom: 50px !important;
+        padding-top: 50px !important;
     }
+ 
 
     // our works-first
     .single-case-studies .content {
@@ -191,7 +235,41 @@
             font-size: 27px !important;
             margin-bottom: 0 !important;
         }
+    } 
+
+      //about
+      .cta-area-two {
+        .container {
+            .cta-content {
+                h3 {
+                    font-size: 30px;
+                }
+            }
+            .cta-btn-box{
+                .custom-btn{
+
+                    padding: 10px 20px;
+                    font-size: 14px;
+            }
+
+            }
+        }
     }
+    .services-details-area{
+        .services-details-image{
+            .video-box{
+                .video-btn {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 30px;
+                }
+            }
+            
+        }
+    }
+  
+ 
+
 
 
     // latestNew
@@ -213,14 +291,17 @@
         }
     }
 
-
     // footer
     .footer-area {
         padding-top: 60px;
 
         .single-footer-widget {
             margin-bottom: 30px;
+            h3{
+                font-size: 19px;
+            }
         }
+        
     }
 
 
@@ -235,9 +316,6 @@
         width: 100% !important;
     }
 
-    .footer-area .single-footer-widget h3 {
-        font-size: 19px;
-    }
 
     .ptb-100 {
         padding-bottom: 50px !important;

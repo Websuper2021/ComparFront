@@ -71,9 +71,7 @@ $gradient-color: #8c4b91;
                     margin-left: auto;
                     flex-direction: row;
 
-                    li.nav-item {
-                        padding-left: 15px;
-                        padding-right: 15px;
+                    .nav-item {
                         position: relative;
                         padding: 15px 12px;
 
@@ -100,7 +98,7 @@ $gradient-color: #8c4b91;
                             &::before {
                                 bottom: -5px;
                                 width: 0;
-                                background:$gradient-color;
+                                background: $gradient-color;
                                 height: 3px;
                                 transition: all .6s ease;
                                 left: 1px;
@@ -118,7 +116,7 @@ $gradient-color: #8c4b91;
                             }
                         }
 
-                        ul.dropdown-menu {
+                        .dropdown-menu {
                             background: #fff;
                             position: absolute;
                             left: 0;
@@ -136,6 +134,9 @@ $gradient-color: #8c4b91;
                             li {
                                 position: relative;
                                 padding: 7px 15px;
+                                &::before{
+                                    
+                                }
 
                                 a {
                                     display: inline-block;
@@ -145,115 +146,18 @@ $gradient-color: #8c4b91;
                                     position: relative;
                                     font-weight: 600;
                                     padding: 0;
+                                    &:hover{
+                                        color: $purple;
+                                    }
                                 }
                             }
 
                         }
 
-                        .mega-dropdown-menu {
-                            width: 500px;
-                            padding: 0 10px 5px;
-                        }
-
-                        .dropdown-menu {
-                            background: #fff;
-                            position: absolute;
-                            top: 80px;
-                            left: 0;
-                            border: none;
-                            display: block;
-                            z-index: 99;
-                            opacity: 0;
-                            border-radius: 5px;
-                            visibility: hidden;
-                            transition: all .3s ease-in-out;
-                            font-size: 1rem;
-                            color: #212529;
-                            text-align: left;
-                            list-style: none;
-
-                            li {
-                                width: 50%;
-                                float: left;
-                                position: relative;
-                                padding: 7px 15px;
-
-                                a {
-                                    padding: 10px 0;
-                                    border-bottom: 1px solid #e5e5e5 !important;
-                                    display: block;
-                                    font-size: 14px;
-                                    color: #18181b;
-                                    text-transform: capitalize;
-                                    position: relative;
-                                    font-weight: 600;
-                                }
-                            }
-                        }
                     }
                 }
 
 
-                .others-options {
-                    padding: 0;
-                    margin: 0 0 0 10px;
-                    list-style-type: none;
-
-                    .btn {
-                        border-radius: 50px;
-                        padding: 11px 20px;
-                        font-size: 14px;
-                        display: inline-block;
-                        line-height: 1.5;
-                        text-align: center;
-                        text-decoration: none;
-                        vertical-align: middle;
-                        cursor: pointer;
-
-                        &::before {
-                            border-radius: 50px;
-
-                        }
-                    }
-
-                    .btn-primary {
-                        color: #fff;
-                        background-color: #fff;
-                        border: 1px solid $purple;
-                        transition: all .6s ease;
-                        position: relative;
-                        text-transform: capitalize;
-                        z-index: 1;
-                        font-weight: 600;
-
-                        &:hover {
-                            color: $purple;
-                            box-shadow: unset;
-                            background-color: transparent;
-                            border-color: $purple;
-
-                            &::before {
-                                width: 0;
-                            }
-
-                        }
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            right: 0;
-                            margin: 0 auto;
-                            width: 100%;
-                            height: 100%;
-                            background: $gradient-color;
-                            z-index: -1;
-                            transition: all .6s ease;
-                        }
-                    }
-
-                }
             }
         }
     }
