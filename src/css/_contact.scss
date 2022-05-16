@@ -1,5 +1,10 @@
+$purple: #c152c9;
+$gradient-color: #8c4b91;
 * {
     box-sizing: border-box;
+}
+#contact-bg{
+    background-image: url(../images/contact_bg.png);
 }
 
 .contact-form {
@@ -55,7 +60,7 @@
     .btn-primary {
         color: #fff;
         background-color: #fff;
-        border: 1px solid #ff2c9c;
+        border: 1px solid $purple;
         padding: 12px 20px;
         border-radius: 5px;
         position: relative;
@@ -66,9 +71,9 @@
         font-size: 15px;
 
         &:hover {
-            color: #ff2c9c;
+            color: $purple;
             background-color: transparent;
-            border-color: #ff2c9c;
+            border-color: $purple;
             &::before{
                 width: 0%;
             }
@@ -84,7 +89,7 @@
             margin: 0 auto;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+            background: $gradient-color;
             z-index: -1;
             transition: all .6s ease;
         }
