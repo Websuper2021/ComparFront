@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./vendors/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/bootstrap.css">
+
     <title>Document</title>
 </head>
 
@@ -79,7 +78,7 @@
 
 
 
-    <div class="hero-banner overly hero-bg1" id="contact-bg">
+    <div class="hero-banner overly hero-bg1" id="faq-bg">
         <div id="particles-js">
             <div><canvas style="width:100%;height:100%" width="1837" height="556"></canvas></div>
         </div>
@@ -103,41 +102,111 @@
         </div>
     </div>
 </header>
-    
-    <!-- Mail Here -->
-    <div class="contact-info-area pt-100 pb-70">
+
+    <!-- Accordion menu -->
+    <section class="faq-area ptb-100">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-info-box">
-                        <div class="icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
-                        <h3>Mail Here</h3>
-                        <p><a href="">admin@pungent.com</a></p>
-                        <p><a href="">info@pungent.com</a></p>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="faq-img"><img src="./images/faq.jpeg" alt="Image"></div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-info-box">
-                        <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                        <h3>Visit Here</h3>
-                        <p>27 Division St, New York, <br> NY 10002, USA</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-info-box">
-                        <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
-                        <h3>Call Here</h3>
-                        <p><a href="+1234567890">+123 456 7890</a></p>
-                        <p><a href="+2414524526">+241 452 4526</a></p>
+                <div class="col-lg-6">
+                    <div class="faq-accordion">
+                        <div data-accordion-component="Accordion" class="accordion">
+                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                <div data-accordion-component="AccordionItemHeading" role="heading"
+                                    class="accordion__heading" aria-level="3">
+                                    <div class="accordion__button" id="accordion__heading-a" aria-disabled="false"
+                                        aria-expanded="false" aria-controls="accordion__panel-a" role="button"
+                                        tabindex="0" data-accordion-component="AccordionItemButton">What access do I
+                                        have on the free plan?</div>
+                                </div>
+                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel"
+                                    role="region" aria-labelledby="accordion__heading-a" id="accordion__panel-a"
+                                    hidden="">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type.</p>
+                                </div>
+                            </div>
+                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                <div data-accordion-component="AccordionItemHeading" role="heading"
+                                    class="accordion__heading" aria-level="3">
+                                    <div class="accordion__button" id="accordion__heading-b" aria-disabled="false"
+                                        aria-expanded="false" aria-controls="accordion__panel-b" role="button"
+                                        tabindex="0" data-accordion-component="AccordionItemButton">What access do I
+                                        have on a free trial?</div>
+                                </div>
+                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel"
+                                    role="region" aria-labelledby="accordion__heading-b" id="accordion__panel-b"
+                                    hidden="">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type.</p>
+                                </div>
+                            </div>
+                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                <div data-accordion-component="AccordionItemHeading" role="heading"
+                                    class="accordion__heading" aria-level="3">
+                                    <div class="accordion__button" id="accordion__heading-c" aria-disabled="false"
+                                        aria-expanded="false" aria-controls="accordion__panel-c" role="button"
+                                        tabindex="0" data-accordion-component="AccordionItemButton">Does the price go up
+                                        as my team gets larger?</div>
+                                </div>
+                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel"
+                                    role="region" aria-labelledby="accordion__heading-c" id="accordion__panel-c"
+                                    hidden="">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type.</p>
+                                </div>
+                            </div>
+                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                <div data-accordion-component="AccordionItemHeading" role="heading"
+                                    class="accordion__heading" aria-level="3">
+                                    <div class="accordion__button" id="accordion__heading-d" aria-disabled="false"
+                                        aria-expanded="false" aria-controls="accordion__panel-d" role="button"
+                                        tabindex="0" data-accordion-component="AccordionItemButton">How can I
+                                        cancel/pause my subscription?</div>
+                                </div>
+                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel"
+                                    role="region" aria-labelledby="accordion__heading-d" id="accordion__panel-d"
+                                    hidden="">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type.</p>
+                                </div>
+                            </div>
+                            <div data-accordion-component="AccordionItem" class="accordion__item">
+
+                                <div data-accordion-component="AccordionItemHeading" role="heading"
+                                    class="accordion__heading" aria-level="3">
+                                    <div class="accordion__button" id="accordion__heading-e" aria-disabled="false"
+                                        aria-expanded="false" aria-controls="accordion__panel-e" role="button"
+                                        tabindex="0" data-accordion-component="AccordionItemButton">Can I pay via an
+                                        invoice?</div>
+                                </div>
+                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel"
+                                    role="region" aria-labelledby="accordion__heading-e" id="accordion__panel-e"
+                                    hidden="">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- //Get in touch// -->
+
+
+    <!-- Ask Your Questions -->
+    <div class="pb-100">
         <div class="contact-form">
-            <h2>Get In Touch</h2>
+            <h2>Ask Your Questions</h2>
             <form id="contactForm">
                 <div class="container">
                     <div class="row">
@@ -167,28 +236,21 @@
                 </div>
             </form>
         </div>
-    
-
-    <!-- Get the only new update from this newsletter -->
-    <div class="ptb-100">
-        <section class="newsletter-area">
-            <div class="container">
-                <div class="newsletter-inner-area">
-                    <div class="newsletter-content"><span class="sub-title">Get Started Instantly!</span>
-                        <h2>Get the only new update from this newsletter</h2>
-                        <form class="newsletter-form">
-                            <input type="email" class="form-control" placeholder="Enter your email" name="email"
-                                required="">
-                            <button type="submit">Subscribe!</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
+  
+
+  <!-- What is the next? -->
+  <div class="cta-area-two ptb-100">
+    <div class="container">
+        <div class="cta-content"><span>So What is Next?</span>
+            <h3>Are You Ready? Let's get to work!</h3>
+        </div>
+        <div class="cta-btn-box"><a class="custom-btn" href="/contact/">Contact Us</a></div>
+    </div>
+</div>
 
 
-        <!-- footer -->
+    <!-- footerrrrrrrrrrrrrrrrrrrrrrrrrrr -->
     <footer class="footer-area">
         <div class="container">
             <div class="row justify-content-center">
@@ -261,6 +323,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
