@@ -114,6 +114,30 @@
         }
 
     }
+     //our work process
+     .work-process-area{
+        .container{
+            .work-process {
+
+            
+            img {
+                max-width: 55%;
+
+            }
+            img.circle-image {
+                top: 0;
+                max-width: 100%;
+            }
+        }
+        .single-work-process .icon {
+            width: 80px !important;
+            height: 80px !important;
+            line-height: 86px !important;
+            font-size: 32px !important;
+        }
+           
+        }
+    }
 
 }
 
@@ -268,6 +292,21 @@
         }
     }
   
+    //our work process
+    .work-process-area{
+        .container{
+            .work-process img {
+                max-width: 37%;
+            }
+            .icon {
+                width: 55px !important;
+                height: 55px !important;
+                line-height: 60px !important;
+                font-size: 20px !important;
+            }
+        }
+    }
+    
  
 
 
