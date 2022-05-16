@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+.mt-40:first-child,
+.mt-40:nth-child(3) {
+    margin-top: 40px;
+}
+
+.mt-40:nth-child(5) {
+    margin-top: -40px;
+}
+
+.single-case-studies {
+    margin-top: 40px;
+    background-image: url(../images/CaseStudy1.jpg);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    min-height: 450px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        background: transparent;
+        z-index: 2;
+
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                transition: all .6s ease;
+            }
+        }
+
+        h3 {
+            font-size: 25px;
+            line-height: 1.3;
+            margin: 10px 0 0;
+            color: #fff;
+            font-weight: 600;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        z-index: 2;
+        padding: 12px 20px;
+        border-radius: 5px;
+        transition: all .6s ease;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        border-color: #fff;
+        color: #18181b;
+        font-size: 14px;
+
+        background-color: #fff;
+        border: 1px solid #ff2c9c;
+
+        &:hover {
+            color: #fff;
+            background-color: transparent;
+            border-color: #fff;
+
+            &::before {
+                width: 0;
+            }
+        }
+
+        &::before {
+            background: #fff;
+            border-radius: 5px;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: all .6s ease;
+
+        }
+    }
+
+    .shape {
+        transition: all .6s ease;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+
+}
+
+.view-more-work {
+    text-align: center;
+
+    .btn-primary {
+        color: #fff;
+        background-color: #fff;
+        border: 1px solid #ff2c9c;
+
+        &:hover {
+            color: #ff2c9c;
+            background-color: transparent;
+            border-color: #ff2c9c;
+
+            &::before {
+                width: 0;
+            }
+        }
+
+        &::before {
+            border-radius: 5px;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+            z-index: -1;
+            transition: all .6s ease;
+        }
+    }
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: all .6s ease;
+            position: relative;
+            text-transform: capitalize;
+            z-index: 1;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 1.5;
+        }
+    }
+    
