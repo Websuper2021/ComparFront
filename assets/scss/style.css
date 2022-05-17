@@ -709,7 +709,6 @@
 
 .navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
   position: relative;
-  padding: 15px 12px;
 }
 
 .navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:hover ul {
@@ -724,7 +723,7 @@
   position: relative;
   font-weight: 600;
   font-size: 15px;
-  padding: 0;
+  padding: 15px;
 }
 
 .navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item a:hover::before {
@@ -761,17 +760,21 @@
   width: 250px;
   z-index: 99;
   border-radius: 5px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
   padding: 20px 5px;
   visibility: hidden;
   font-size: 1rem;
   color: #212529;
 }
 
+.navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu.right-drop {
+  right: 0;
+  left: auto;
+}
+
 .navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu li {
   position: relative;
-  padding: 7px 15px;
 }
 
 .navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a {
@@ -781,7 +784,11 @@
   text-transform: capitalize;
   position: relative;
   font-weight: 600;
-  padding: 0;
+  padding: 10px;
+}
+
+.navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a::before {
+  display: none;
 }
 
 .navbar-area .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a:hover {
@@ -1651,6 +1658,11 @@
     line-height: 86px !important;
     font-size: 32px !important;
   }
+  .work-process-area .container .single-work-process h3 {
+    font-size: 16px !important;
+    margin-top: 20px !important;
+    margin-bottom: 5px !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1740,11 +1752,44 @@
   .work-process-area .container .work-process img {
     max-width: 37%;
   }
-  .work-process-area .container .icon {
+  .work-process-area .container .work-process .icon {
     width: 55px !important;
     height: 55px !important;
     line-height: 60px !important;
     font-size: 20px !important;
+  }
+  .work-process-area .container .work-process .circle-image {
+    top: 0 !important;
+    max-width: 70% !important;
+    opacity: .4 !important;
+  }
+  .work-process-area .container .single-work-process:first-child {
+    left: 10% !important;
+    top: -40px !important;
+  }
+  .work-process-area .container .single-work-process:nth-child(2) {
+    left: auto !important;
+    right: 10% !important;
+    top: -40px !important;
+  }
+  .work-process-area .container .single-work-process h3 {
+    font-size: 13px !important;
+    margin-top: 15px !important;
+    margin-bottom: 4px !important;
+  }
+  .work-process-area .container .single-work-process:nth-child(4) {
+    left: auto !important;
+    right: 10% !important;
+    bottom: -40px !important;
+    top: auto !important;
+  }
+  .work-process-area .container .single-work-process:nth-child(5) {
+    left: 10% !important;
+    top: auto !important;
+    bottom: -40px !important;
+  }
+  .work-process-area .container .section-title {
+    margin-bottom: 75px !important;
   }
   .container {
     max-width: 720px !important;
@@ -1785,6 +1830,10 @@
   }
   .section-title p {
     font-size: 14px !important;
+  }
+  .work-process-list .single-work-process:first-child {
+    left: 10% !important;
+    top: -40px !important;
   }
 }
 
@@ -2663,5 +2712,231 @@ img {
 .widget-area .tagcloud a:hover {
   color: #fff;
   background-color: #8c4b91;
+}
+
+#eductaion-info {
+  padding: 4em 0;
+  background: #f3f1f1;
+}
+
+#eductaion-info .edu-left .edu-left-top {
+  color: #727695;
+}
+
+#eductaion-info .edu-left .course-team-work {
+  list-style: none;
+  padding: 1em;
+}
+
+#eductaion-info .edu-left .course-team-work li {
+  color: #727695;
+  position: relative;
+}
+
+#eductaion-info .edu-left .course-team-work li::before {
+  content: "\2022";
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1em;
+}
+
+#eductaion-info .edu-left p {
+  color: #727695;
+}
+
+#eductaion-info .edu-left .courses-meta {
+  margin-top: 20px;
+}
+
+#eductaion-info .edu-left .courses-meta ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+#eductaion-info .edu-left .courses-meta ul li {
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+  border-right: 1px solid #eeeeee;
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 20px;
+  padding-left: 37px;
+}
+
+#eductaion-info .edu-left .courses-meta ul li i {
+  font-size: 25px;
+  color: #cfcfcf;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#eductaion-info .edu-left .courses-meta ul li span {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(122, 3, 122, 0.92);
+}
+
+#eductaion-info .edu-left .edu-left-img {
+  margin: 15px 0;
+  margin-bottom: 25px;
+}
+
+#eductaion-info .edu-left .edu-left-img img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+#eductaion-info .edu-left .edu-left-program h6 {
+  margin: 0;
+}
+
+#eductaion-info .edu-left .edu-left-program ul {
+  list-style: none;
+  padding: 0;
+}
+
+#eductaion-info .edu-left .edu-left-program ul li {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #727695;
+}
+
+#eductaion-info .edu-left .edu-left-program ul li img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+#eductaion-info .edu-right {
+  margin-top: 20px;
+  padding-top: 2em;
+}
+
+#eductaion-info .edu-right .default-btn {
+  background: #9b0482;
+}
+
+#eductaion-info .edu-right .courses-sidebar-information {
+  margin-top: 58px;
+}
+
+#eductaion-info .edu-right .courses-sidebar-information ul {
+  list-style: disc;
+  padding: 0;
+}
+
+#eductaion-info .edu-right .courses-sidebar-information ul li {
+  border-bottom: 1px dashed #eeeeee;
+  color: #252525;
+  overflow: hidden;
+  list-style-type: none !important;
+  text-align: right;
+  padding: 12px 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#eductaion-info .edu-right .courses-sidebar-information ul li box-icon {
+  font-size: 1.5em;
+  color: green;
+}
+
+#eductaion-info .edu-right .courses-sidebar-information ul li:hover i {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#eductaion-info .edu-right .courses-sidebar-information ul li span {
+  display: block;
+  width: 170px;
+  text-align: left;
+  float: left;
+}
+
+#eductaion-info .edu-right .courses-sidebar-information ul li span i {
+  color: #9b0482;
+  position: relative;
+  top: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-style: normal;
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+.blog-area .widget_categories li#course::before {
+  display: none !important;
+}
+
+.blog-area .widget_categories li#course a i {
+  color: #9b0482;
+  position: relative;
+  top: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-style: normal;
+  font-size: 20px;
+  margin-right: 6px;
+  line-height: 1;
+}
+
+.edu-left-program ul {
+  list-style: none;
+  padding: 0;
+}
+
+.edu-left-program ul li {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #727695;
+}
+
+.edu-left-program ul li img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.faq-area h3 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.faq-area .lectures {
+  font-weight: 500;
+}
+
+.faq-area .faq-accordion {
+  padding-top: 1rem;
+}
+
+.faq-area .faq-accordion .accordion__button span {
+  position: absolute;
+  right: 0;
+  padding-right: 1.5rem;
+  font-size: 16px;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

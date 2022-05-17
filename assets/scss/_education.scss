@@ -1,0 +1,152 @@
+#eductaion-info {
+    padding: 4em 0;
+    background: rgb(243, 241, 241);
+    .edu-left {
+        .edu-left-top{
+            color:#727695;
+        }
+        .course-team-work{
+            list-style: none;
+            padding: 1em;
+            li{
+                color:#727695;
+                position: relative;
+                &::before{
+                    content: "\2022";
+                    color: #000;
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: 1.2em;
+                    margin-left: -1em;
+                }
+            }
+        }
+        p{
+        color:#727695;
+        }
+        .courses-meta {
+            margin-top: 20px;
+
+            ul {
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style-type: none;
+
+                li {
+                    margin-right: 20px;
+                    position: relative;
+                    display: inline-block;
+                    border-right: 1px solid #eeeeee;
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding-right: 20px;
+                    padding-left: 37px;
+                    
+                    i {
+                        font-size: 25px;
+                        color: #cfcfcf;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transition: transform .4s;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+
+                    }
+
+                    span {
+                        display: block;
+                        text-transform: uppercase;
+                        margin-bottom: 1px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: rgba(122, 3, 122, 0.92);
+                    }
+                }
+            }
+        }
+
+        .edu-left-img {
+            margin: 15px 0;
+            margin-bottom: 25px;
+            img {
+                border-radius: 8px;
+                width: 100%;
+
+            }
+
+        }
+        .edu-left-program{
+            h6{
+                margin:0
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    color:#727695;
+                    img{
+                        max-width: 40px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .edu-right {
+        margin-top: 20px;
+        padding-top: 2em;
+        .default-btn {
+            background: rgb(155, 4, 130);
+        }
+
+        .courses-sidebar-information {
+            margin-top: 58px;
+
+            ul {
+                list-style: disc;
+                padding: 0;
+                li {
+                    border-bottom: 1px dashed #eeeeee;
+                    color: #252525;
+                    overflow: hidden;
+                    list-style-type: none !important;
+                    text-align: right;
+                    padding: 12px 15px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    box-icon{
+                        font-size: 1.5em;
+                        color:green
+                    }
+                    &:hover{
+                        i{
+                          transform: rotateY(180deg);
+  
+                        }
+                      }
+                    span {
+                        display: block;
+                        width: 170px;
+                        text-align: left;
+                        float: left;
+                        i{
+                            color:rgb(155, 4, 130);
+                            position: relative;
+                            top: 4px;
+                            -webkit-transition: 0.5s;
+                            transition: 0.5s;
+                            font-style: normal;
+                            font-size: 20px;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -73,7 +73,7 @@ $gradient-color: #8c4b91;
 
                     .nav-item {
                         position: relative;
-                        padding: 15px 12px;
+                        // padding: 15px 12px;
 
                         &:hover {
                             ul {
@@ -89,8 +89,7 @@ $gradient-color: #8c4b91;
                             position: relative;
                             font-weight: 600;
                             font-size: 15px;
-                            padding: 0;
-
+                            padding: 15px;
                             &:hover::before {
                                 width: 60%;
                             }
@@ -125,18 +124,20 @@ $gradient-color: #8c4b91;
                             width: 250px;
                             z-index: 99;
                             border-radius: 5px;
-                            transition: all .3s ease-in-out;
+                            transition: opacity .3s ease;
                             padding: 20px 5px;
                             visibility: hidden;
                             font-size: 1rem;
                             color: #212529;
+                            &.right-drop{
+                                right: 0;
+                                left: auto;
+                            }
 
                             li {
                                 position: relative;
-                                padding: 7px 15px;
-                                &::before{
-                                    
-                                }
+                                // padding: 7px 15px;
+                                
 
                                 a {
                                     display: inline-block;
@@ -145,7 +146,10 @@ $gradient-color: #8c4b91;
                                     text-transform: capitalize;
                                     position: relative;
                                     font-weight: 600;
-                                    padding: 0;
+                                    padding: 10px;
+                                    &::before{
+                                        display: none; 
+                                     }
                                     &:hover{
                                         color: $purple;
                                     }

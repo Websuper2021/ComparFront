@@ -1,0 +1,59 @@
+
+.blog-area{
+    .widget_categories{
+        li#course{
+            &::before{
+                display: none !important;
+            }
+            a{
+                i {
+                    color: #9b0482;
+                    position: relative;
+                    top: 4px;
+                    transition: 0.5s;
+                    font-style: normal;
+                    font-size: 20px;
+                    margin-right: 6px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+.edu-left-program ul {
+    list-style: none;
+    padding: 0;
+    li{
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+        color: #727695;
+        img{
+            max-width: 40px;
+            margin-right: 10px;
+        }
+       
+    }
+}
+
+.faq-area{
+    h3{
+        font-weight: 700;
+        padding-bottom: 3rem ;
+    }
+    .lectures{
+        font-weight: 500;
+    }
+    .faq-accordion{
+        padding-top: 1rem;
+        .accordion__button{
+            span{
+                position: absolute;
+                right: 0;
+                padding-right: 1.5rem;
+                font-size: 16px;
+                font-style: italic;               
+            }
+        }
+    }
+}
