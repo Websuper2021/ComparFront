@@ -1,9 +1,4 @@
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common.js");
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (env) => {
@@ -19,7 +14,7 @@ module.exports = (env) => {
             },
             shared: [
                "./src/vendors/bootstrap.css",
-               "./src/css/style.css",
+               "./src/css/style.scss",
                "./src/vendors/owl-carousel/assets/owl.carousel.css",
                "./src/vendors/jquery/jquery-3.6.0.min.js",
                "./src/vendors/owl-carousel/owl.carousel.min.js",
@@ -69,7 +64,6 @@ module.exports = (env) => {
       },
       plugins: [
          new HtmlWebpackPlugin({
-            // Also generate a test.html
             filename: "index.html",
             template: "src/pages/index.html",
             chunks: ["index", "shared"],
