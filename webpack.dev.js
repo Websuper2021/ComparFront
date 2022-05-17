@@ -23,6 +23,7 @@ module.exports = (env) => {
                "./src/vendors/owl-carousel/assets/owl.carousel.css",
                "./src/vendors/jquery/jquery-3.6.0.min.js",
                "./src/vendors/owl-carousel/owl.carousel.min.js",
+               "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
             ],
          },
          output: {

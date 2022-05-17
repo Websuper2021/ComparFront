@@ -1,4 +1,6 @@
 import './vendors/bootstrap.css'
+import './vendors/owl-carousel/assets/owl.carousel.css'
+import './vendors/owl-carousel/assets/owl.theme.default.min.css'
 import './css/style.scss'
 import './js/app.js'
 import './images/logo-white.png'
