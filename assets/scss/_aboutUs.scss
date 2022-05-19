@@ -40,16 +40,7 @@ $gradient-color: #8c4b91;
             margin-right: auto;
             cursor: pointer;
 
-            .ripple {
-                animation-duration: 2s;
-                animation-timing-function: linear;
-                animation-delay: 0s;
-                animation-iteration-count: infinite;
-                animation-direction: normal;
-                animation-fill-mode: none;
-                animation-play-state: running;
-                animation-name: ripple;
-            }
+           
          
 
             &::before {
@@ -169,3 +160,22 @@ $gradient-color: #8c4b91;
         }
     }
 }
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 8rem rgba(255, 255, 255, 0);
+    }
+  }
+
+//   .ripple {
+//     animation-duration: 2s;
+//     animation-timing-function: linear;
+//     animation-delay: 0s;
+//     animation-iteration-count: infinite;
+//     animation-direction: normal;
+//     animation-fill-mode: none;
+//     animation-play-state: running;
+//     animation-name: ripple;
+// }

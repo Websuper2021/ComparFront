@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./vendors/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="vendors/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="vendors/helper.css">
+    
 
     <title>Document</title>
 
@@ -22,18 +25,19 @@
         <div id="navbar" class="navbar-area navbar-style-2">
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo-white.png" class="black-logo" alt="logo">
+                    <a class="navbar-brand" style="width: 110px;" href="index.html">
+                        <img src="assets/images/compar-logo-white.svg" class="white-logo" alt="logo">
+                        <img src="assets/images/compar-logo-gradiant.svg" class="black-logo" alt="">
                     </a>
-                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
 
+                    <button class="btn-navbar-toggler" type="button">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-
-
                             <li class="nav-item"><a class="nav-link" href="/#">TƏDRİS PAKETLƏRİ
                                     <i class="fa-solid fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
@@ -86,7 +90,9 @@
 
         <div class="hero-banner overly hero-bg1" id="index-bg">
             <div id="particles-js">
-                <div><canvas style="width:100%;height:100%" width="1837" height="556"></canvas></div>
+                <div>
+                    <canvas style="width:100%;height:100%" width="1837" height="556"></canvas>
+                </div>
             </div>
             <div class="d-table">
                 <div class="d-table-cell">
@@ -109,7 +115,7 @@
         </div>
     </header>
 
-    <!--- Our Works ---->
+    <!-- Our Works -->
     <section class="case-studies-area ptb-100">
         <div class="container">
             <div class="section-title">
@@ -123,7 +129,7 @@
                         <div class="content">
                             <span><a href="/portfolio/">Development</a></span>
                             <h3><a href="/portfolio-details/">Designing a better cinema experience</a></h3>
-                        </div><a class="btn btn-primary" href="/portfolio-details/">View Case Study</a>
+                        </div><a class="btn btn-primary" href="course.html">View Case Study</a>
                         <div class="shape"><img src="assets/images/ourWork-first-shap1.png" alt="logo"></div>
                     </div>
                 </div>
@@ -173,7 +179,6 @@
             <div class="view-more-work mt-0"><a class="btn btn-primary" href="/portfolio/">View More Work</a></div>
         </div>
     </section>
-
 
     <!-- aboutUs -->
     <section class="about-area ptb-100">
@@ -245,7 +250,7 @@
                         <span>Visual Design</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="icon"><span class="pe-7s-map-marker"></span></div>
                         <h3>Skeleton</h3>
                         <span>Wireframes</span>
                     </div>
@@ -274,7 +279,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- We always try to understand users expectation -->
     <section class="funfacts-area ptb-100 bg-fcfbfb">
@@ -323,8 +327,7 @@
         </div>
     </section>
 
-
-    <!------------- Latest News -------------->
+    <!-- Latest News -->
     <section class="blog-area ptb-100">
         <div class="container">
             <div class="section-title">
@@ -419,16 +422,15 @@
 
     </section>
 
-
-    <!-- footerrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+    <!-- footer -->
     <footer class="footer-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-3">
                     <div class="single-footer-widget">
                         <div class="logo">
-                            <a href="">
-                                <img src="assets/images/logo.png" alt="image">
+                            <a class="footer-logo" style="width: 110px;" href="index.html">
+                                <img src="assets/images/compar-logo-gradiant.svg" alt="">
                             </a>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -496,9 +498,22 @@
         </div>
     </footer>
 
+    <!-- scroll-to-top -->
+    <div class="scroll-to-top">
+        <!-- <i class="fa-solid fa-angle-up"></i> -->
+    </div>
+    <button id="to-top">To Top</button>
+
     <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./vendors/bootstrap.bundle.js"></script>
+
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll-to-top.js"></script>
+    <script src="assets/js/toggleMenu.js"></script>
+    <script src="vendors/particles.js"></script>
+    <script src="vendors/app.js"></script>
     <!-- <script src="assets/particles.js"></script> -->
 
 </body>
