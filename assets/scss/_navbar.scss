@@ -4,41 +4,49 @@ $gradient-color: #8c4b91;
 * {
     box-sizing: border-box;
 }
-.btn-navbar-toggler  {
-        border: none;
-        background: #eee!important;
-        padding: 10px;
-        border-radius: 0;
-        font-size: 1.25rem;
-        display: none;
-        position: absolute;
-        top: .6rem;
-        right: 1rem;
-        flex-direction: column;
-        justify-content: space-between;
-        .icon-bar {
-            width: 28px;
-            transition: all .3s;
-            background: $gradient-color;
-            height: 2px;
-            display: block;
-        }
-        .top-bar {
-            transform: rotate(0);
-            left: 0;
-            transform-origin: 10% 10%;
-            position: relative;
-        }
-        .middle-bar {
-            opacity: 1;
-            margin: 6px 0;
-        }
-        .bottom-bar {
-            transform: rotate(0);
-            left: 0;
-            transform-origin: 10% 90%;
-            position: relative;
-        }
+
+
+.btn-navbar-toggler {
+    border: none;
+    background: #eee !important;
+    padding: 10px;
+    border-radius: 0;
+    font-size: 1.25rem;
+    display: none;
+    position: absolute;
+    top: .6rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .icon-bar {
+        width: 28px;
+        transition: all .3s;
+        background: $gradient-color;
+        height: 2px;
+        display: block;
+    }
+
+    .top-bar {
+        transform: rotate(0);
+        left: 0;
+        transform-origin: 10% 10%;
+        position: relative;
+    }
+
+    .middle-bar {
+        opacity: 1;
+        margin: 6px 0;
+    }
+
+    .bottom-bar {
+        transform: rotate(0);
+        left: 0;
+        transform-origin: 10% 90%;
+        position: relative;
+    }
+
+
 }
 
 .navbar-area.sticky {
@@ -54,26 +62,31 @@ $gradient-color: #8c4b91;
     animation: fadeInDown .5s ease-in-out 0s 1 normal none running;
 
     .navbar-light {
-        .white-logo{
+        .white-logo {
             display: none;
         }
-        .black-logo{
+
+        .black-logo {
             display: block;
         }
     }
-  .navbar-collapse{
-      ul li {
-      a{
-          color:black !important;
-      }
-      .dropdown-menu{
-    li a:hover{
-       color: $purple !important;
-   }
-      }
+
+    .navbar-collapse {
+        ul li {
+            a {
+                color: black !important;
+            }
+
+            .dropdown-menu {
+                li a:hover {
+                    color: $purple !important;
+                }
+
+            }
+        }
     }
-  }
 }
+
 
 
 .navbar-area {
@@ -85,7 +98,8 @@ $gradient-color: #8c4b91;
     width: 100%;
     z-index: 999;
     height: auto;
-    .toggle-button{
+
+    .toggle-button {
         position: absolute;
         top: .75rem;
         right: 1rem;
@@ -94,18 +108,20 @@ $gradient-color: #8c4b91;
         width: 30px;
         height: 21px;
         display: none;
-        .bar{
+
+        .bar {
             height: 3px;
             width: 100%;
             background-color: white;
             border-radius: 10px;
         }
     }
+
     .navbar-light {
-        .black-logo{
+        .black-logo {
             display: none;
         }
-        
+
     }
 
     .navbar {
@@ -149,7 +165,7 @@ $gradient-color: #8c4b91;
                 border-radius: 0;
                 font-size: 1.25rem;
                 line-height: 1;
-                transition:  .15s ease-in-out;
+                transition: .15s ease-in-out;
             }
 
             .navbar-collapse {
@@ -167,6 +183,9 @@ $gradient-color: #8c4b91;
 
                     .nav-item {
                         position: relative;
+                        padding-left: 15px !important;
+                        padding-right: 15px;
+                       
                         // padding: 15px 12px;
 
                         &:hover {
@@ -212,11 +231,12 @@ $gradient-color: #8c4b91;
 
                         .dropdown-menu {
                             background: #fff;
+                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                             position: absolute;
                             left: 0;
                             border: none;
                             display: block;
-                            width: 250px;
+                            width: 98% !important;
                             z-index: 99;
                             border-radius: 5px;
                             transition: opacity .3s ease;
@@ -224,6 +244,24 @@ $gradient-color: #8c4b91;
                             visibility: hidden;
                             font-size: 1rem;
                             color: #212529;
+                           
+
+                          
+
+                            .nav-item {
+                                padding-left: 30px !important;
+                                padding-right: 15px;
+                                width: 100% !important;
+                            
+                                a {
+                                padding: 10px 0 !important;
+                                border-bottom: 1px solid #e5e5e5 !important;
+                                display: block !important;
+                                &:hover{
+                                    color: $purple !important;
+                                }
+                            }
+                        }
 
                             &.right-drop {
                                 right: 0;
@@ -267,11 +305,12 @@ $gradient-color: #8c4b91;
 
 // fadeInDown
 @keyframes fadeInDown {
-    0%{
+    0% {
         opacity: 0;
-        transform: translate3d(0, -100%,0);
+        transform: translate3d(0, -100%, 0);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateZ(0);
     }

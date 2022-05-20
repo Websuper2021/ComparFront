@@ -1,17 +1,17 @@
-document.querySelector("#to-top").addEventListener("click", function(){
+var mybutton=document.getElementById("myBtn");
+window.onscroll=function(){
+    scrollFunction()
+}
 
-    var toTopInterval = setInterval(function(){
+function scrollFunction(){
+    if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){
+        mybutton.style.display="block";
+    }else{
+        mybutton.style.display="none";
+    }
+}
 
-        var supportedScrollTop = document.body.scrollTop > 0 ? document.body : document.documentElement;
-
-        if (supportedScrollTop.scrollTop > 0) {
-            supportedScrollTop.scrollTop = supportedScrollTop.scrollTop - 50;
-        }
-
-        if (supportedScrollTop.scrollTop < 1) {
-            clearInterval(toTopInterval);
-        }
-
-    },);
-
-},false);
+function topFunction(){
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+}

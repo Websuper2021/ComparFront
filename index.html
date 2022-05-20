@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/scss/style.css">
-    <link rel="stylesheet" href="./vendors/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="vendors/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="vendors/helper.css">
-    
+    <link rel="stylesheet" href="assets/vendors/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/vendors/helper.css">
+
 
     <title>Document</title>
 
@@ -30,7 +30,7 @@
                         <img src="assets/images/compar-logo-gradiant.svg" class="black-logo" alt="">
                     </a>
 
-                    <button class="btn-navbar-toggler" type="button">
+                    <button class="btn-navbar-toggler toggle-menu" onclick="toggleMenu()"  type="button">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
@@ -85,8 +85,6 @@
                 </div>
             </nav>
         </div>
-
-
 
         <div class="hero-banner overly hero-bg1" id="index-bg">
             <div id="particles-js">
@@ -187,7 +185,7 @@
                 <div class="col-lg-5 col-md-12">
                     <div class="about-image"><img src="assets/images/aboutUs.jpg" alt="image" class="rounded-10">
                         <div class="video-box">
-                            <div class="video-btn"><i class="fa-solid fa-play"></i></div>
+                            <div class="video-btn"><i class="pe-7s-play"></i></div>
                         </div>
                     </div>
                 </div>
@@ -213,13 +211,13 @@
                         <div class="about-text">
                             <h4>Our Mission</h4>
                             <ul>
-                                <li><i class="fa-solid fa-circle-check"></i>Lorem Ipsum is simply dummy text of the
+                                <li><i class="pe-7s-check"></i>Lorem Ipsum is simply dummy text of the
                                     printing and
                                     typesetting industry.</li>
-                                <li><i class="fa-solid fa-circle-check"></i>It is a long established fact that a reader
+                                <li><i class="pe-7s-check"></i>It is a long established fact that a reader
                                     will be
                                     distracted by the readable content of a page when looking at its layout.</li>
-                                <li><i class="fa-solid fa-circle-check"></i>Contrary to popular belief, Lorem Ipsum is
+                                <li><i class="pe-7s-check"></i>Contrary to popular belief, Lorem Ipsum is
                                     not simply
                                     random text. It has roots in a piece of classical Latin literature.</li>
                             </ul>
@@ -250,27 +248,27 @@
                         <span>Visual Design</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><span class="pe-7s-map-marker"></span></div>
+                        <div class="icon"><i class="pe-7s-display2"></i></div>
                         <h3>Skeleton</h3>
                         <span>Wireframes</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-check-double"></i></div>
+                        <div class="icon"><i class="pe-7s-airplay"></i></div>
                         <h3>Structure</h3>
                         <span>Screen Flow</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-clipboard"></i></div>
+                        <div class="icon"><i class="pe-7s-note2"></i></div>
                         <h3>Scope</h3>
                         <span>Requirements</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="icon"><i class="pe-7s-light"></i></div>
                         <h3>User Research</h3>
                         <span>User Research</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-sun"></i></div>
+                        <div class="icon"><i class="pe-7s-sun"></i></div>
                         <h3>Implement</h3>
                         <span>Lunch/Analyse</span>
                     </div>
@@ -499,23 +497,23 @@
     </footer>
 
     <!-- scroll-to-top -->
-    <div class="scroll-to-top">
-        <!-- <i class="fa-solid fa-angle-up"></i> -->
+    <div onclick="topFunction()" id="myBtn" title="Go to top" class="scroll-to-top">
+        <i class="pe-7s-angle-up"></i>
     </div>
-    <button id="to-top">To Top</button>
 
-    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./vendors/bootstrap.bundle.js"></script>
-
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/scroll-to-top.js"></script>
-    <script src="assets/js/toggleMenu.js"></script>
-    <script src="vendors/particles.js"></script>
-    <script src="vendors/app.js"></script>
+    <script src="assets/vendors/particles.js"></script>
+    <script src="assets/vendors/app.js"></script>
+    <script src="assets/js/scroll-to-top.js"></script>
+    <script src="assets/js/toggle.js"></script>
     <!-- <script src="assets/particles.js"></script> -->
 
 </body>
+
 
 </html>

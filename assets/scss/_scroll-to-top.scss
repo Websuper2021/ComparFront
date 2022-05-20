@@ -1,3 +1,6 @@
+$purple: #c152c9;
+$gradient-color: #8c4b91;
+
 .scroll-to-top i {
     position: fixed;
     cursor: pointer;
@@ -13,5 +16,11 @@
     line-height: 40px;
     border-radius: 50%;
     transition: all .6s ease;
-    
+
+    &:hover {
+        color: #fff;
+        background: $gradient-color;
+
+    }
+
 }

@@ -188,16 +188,6 @@
 
     .navbar {
 
-        .navbar-light {
-            .white-logo {
-                display: none;
-            }
-
-            .black-logo {
-                display: block;
-            }
-        }
-
         .navbar-collapse {
             ul li a {
                 color: black !important;
@@ -206,10 +196,82 @@
     }
 
     .navbar-collapse {
+        position: static;
+
         .navbar-nav {
-            display: none;
+            display: none !important;
+            position: absolute;
+            top: 100%;
+            background: #fff;
+            width: 100%;
+            left: 0;
+        }
+        .navbar-nav.active{
+            display: block !important;
         }
     }
+
+    //toggle-menu
+    .navbar-area .navbar-nav {
+        overflow-y: auto;
+        height: 60vh;
+        display: block;
+
+        .nav-item {
+            padding: 5px;
+
+
+            .nav-link {
+                color: #000 !important;
+
+                i {
+                    display: none !important;
+                }
+            }
+
+            .dropdown-menu {
+                position: relative !important;
+                top: 0 !important;
+                width: 98% !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                padding: 10px 0 !important;
+                margin-top: 8px !important;
+
+                .nav-item {
+                    width: 100%;
+                    float: none;
+                    padding: 0 15px;
+                }
+            }
+        }
+
+    }
+
+    //active toggle
+    .btn-navbar-toggler.active {
+        .top-bar {
+            transform: rotate(45deg);
+            transform-origin: 10% 10%;
+            left: 4px;
+            position: relative;
+        }
+
+        .middle-bar {
+            opacity: 0;
+            margin: 6px 0;
+        }
+
+        .bottom-bar {
+            transform: rotate(-45deg);
+            transform-origin: 10% 90%;
+            left: 4px;
+            position: relative;
+        }
+    }
+
+
+
 
     // our works-first
     .single-case-studies .content {
