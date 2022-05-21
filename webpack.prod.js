@@ -69,9 +69,6 @@ module.exports = (env) => {
       },
       mode: 'production',
       optimization: {
-         splitChunks: {
-            chunks: 'all'
-         },
          minimizer: [
             `...`,
             new CssMinimizerPlugin(),
