@@ -53,6 +53,9 @@ module.exports = (env) => {
             {
                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                type: "asset",
+               generator: {
+                  filename: "images/[name][ext]",
+               },
             },
             {
                test: /\.html$/i,
