@@ -72,11 +72,6 @@ module.exports = (env) => {
          static: "./dist",
          watchFiles: "./src",
       },
-      optimization: {
-         splitChunks: {
-            chunks: "all",
-         },
-      },
       plugins: [
          new HtmlWebpackPlugin({
             filename: "index.html",
