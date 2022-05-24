@@ -14,12 +14,12 @@ module.exports = (env) => {
             },
             shared: [
                "./src/vendors/bootstrap.css",
-               "./src/css/style.scss",
                "./src/vendors/owl-carousel/assets/owl.carousel.css",
+               "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
+               "./src/css/style.scss",
                "./src/vendors/jquery/jquery-3.6.0.min.js",
                "./src/vendors/owl-carousel/owl.carousel.min.js",
-               "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
-            ],
+         ],
          },
          output: {
             path: path.resolve(__dirname, "dist"),
@@ -56,11 +56,6 @@ module.exports = (env) => {
          hot: true,
          static: "./dist",
          watchFiles: "./src",
-      },
-      optimization: {
-         splitChunks: {
-            chunks: "all",
-         },
       },
       plugins: [
          new HtmlWebpackPlugin({
