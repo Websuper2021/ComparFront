@@ -18,12 +18,25 @@ module.exports = (env) => {
             dependOn: ["shared"],
          },
          shared: [
-               "./src/vendors/bootstrap.css",
-               "./src/vendors/owl-carousel/assets/owl.carousel.css",
-               "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
-               "./src/css/style.scss",
-               "./src/vendors/jquery/jquery-3.6.0.min.js",
-               "./src/vendors/owl-carousel/owl.carousel.min.js",
+       
+            "./src/css/style.scss",
+            "./src/vendors/bootstrap.css",
+            "./src/vendors/owl-carousel/assets/owl.carousel.css",
+            "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
+            "./src/vendors/pe-icon-7-stroke.css",
+            "./src/vendors/icofont.css",
+            "./src/vendors/helper.css",
+
+            "./src/js/app.js",
+            "./src/js/navbar.js",
+            "./src/js/scroll-to-top.js",
+            "./src/js/toggle.js",
+
+            "./src/vendors/jquery/jquery-3.6.0.min.js",
+            "./src/vendors/bootstrap.bundle.js",
+            "./src/vendors/owl-carousel/owl.carousel.min.js",
+            "./src/vendors/particles.js",
+            "./src/vendors/app.js",
          ],
       },
       output: {

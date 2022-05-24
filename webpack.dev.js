@@ -12,13 +12,31 @@ module.exports = (env) => {
                import: "./src/blog.js",
                dependOn: ["shared"],
             },
+            blog: {
+               import: "./src/faq.js",
+               dependOn: ["shared"],
+            },
             shared: [
-               "./src/vendors/bootstrap.css",
+          
                "./src/css/style.scss",
+
+               "./src/vendors/bootstrap.css",
                "./src/vendors/owl-carousel/assets/owl.carousel.css",
-               "./src/vendors/jquery/jquery-3.6.0.min.js",
-               "./src/vendors/owl-carousel/owl.carousel.min.js",
                "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
+               "./src/vendors/pe-icon-7-stroke.css",
+               "./src/vendors/icofont.css",
+               "./src/vendors/helper.css",
+
+               "./src/js/app.js",
+               "./src/js/navbar.js",
+               "./src/js/scroll-to-top.js",
+               "./src/js/toggle.js",
+
+               "./src/vendors/jquery/jquery-3.6.0.min.js",
+               "./src/vendors/bootstrap.bundle.js",
+               "./src/vendors/owl-carousel/owl.carousel.min.js",
+               "./src/vendors/particles.js",
+               "./src/vendors/app.js",
             ],
          },
          output: {
@@ -39,9 +57,6 @@ module.exports = (env) => {
             {
                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                type: "asset",
-               generator: {
-                  filename: "images/[name][ext]",
-               },
             },
             {
                test: /\.html$/i,
@@ -67,6 +82,13 @@ module.exports = (env) => {
             filename: "index.html",
             template: "src/pages/index.html",
             chunks: ["index", "shared"],
+            inject: "body",
+            minify: false,
+         }),
+         new HtmlWebpackPlugin({
+            filename: "faq.html",
+            template: "src/pages/faq.html",
+            chunks: ["faq", "shared"],
             inject: "body",
             minify: false,
          }),

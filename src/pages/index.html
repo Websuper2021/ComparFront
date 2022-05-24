@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
     <title>Document</title>
 
 </head>
@@ -14,21 +17,23 @@
     <header>
         <div id="navbar" class="navbar-area navbar-style-2">
             <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid"><a class="navbar-brand" href="index.html">
-                        <img src="../images/logo-white.png" class="black-logo" alt="logo">
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="width: 110px;" href="index.html">
+                        <img src="../images/compar-logo-white.svg" class="white-logo" alt="logo">
+                        <img src="../images/compar-logo-gradiant.svg" class="black-logo" alt="">
                     </a>
-                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
 
+                    <button class="btn-navbar-toggler toggle-menu" onclick="toggleMenu()" type="button">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-
-
+                        <ul class="navbar-nav scroll">
                             <li class="nav-item"><a class="nav-link" href="/#">TƏDRİS PAKETLƏRİ
                                     <i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu ">
                                     <li class="nav-item"><a class="nav-link" href="/portfolio/">Portfolio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/portfolio-details/">Portfolio
                                             Details</a></li>
@@ -53,18 +58,19 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" >BLOQ
-                                <i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
+
+                            <li class="nav-item"><a class="nav-link">BLOQ
+                                    <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="dropdown-menu right-drop">
                                     <li class="nav-item"><a class="nav-link" href="blog.html">Bloq</a></li>
                                     <li class="nav-item"><a class="nav-link" href="blogDetail.html">Bloq Detail
-                                            </a></li>
+                                        </a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a class="nav-link" href="contact.html">ƏLAQƏ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">ƏLAQƏ</a></li>
 
                         </ul>
                         <!-- <div class="others-options"><a class="btn btn-primary" href="/pricing/">Let's Begin</a></div> -->
@@ -74,10 +80,11 @@
         </div>
 
 
-
         <div class="hero-banner overly hero-bg1" id="index-bg">
             <div id="particles-js">
-                <div><canvas style="width:100%;height:100%" width="1837" height="556"></canvas></div>
+                <div>
+                    <canvas style="width:100%;height:100%" width="1837" height="556"></canvas>
+                </div>
             </div>
             <div class="d-table">
                 <div class="d-table-cell">
@@ -100,7 +107,7 @@
         </div>
     </header>
 
-    <!--------------- Our Works ------------------------------------>
+    <!-- Our Works -->
     <section class="case-studies-area ptb-100">
         <div class="container">
             <div class="section-title">
@@ -114,7 +121,7 @@
                         <div class="content">
                             <span><a href="/portfolio/">Development</a></span>
                             <h3><a href="/portfolio-details/">Designing a better cinema experience</a></h3>
-                        </div><a class="btn btn-primary" href="/portfolio-details/">View Case Study</a>
+                        </div><a class="btn btn-primary" href="course.html">View Case Study</a>
                         <div class="shape"><img src="../images/ourWork-first-shap1.png" alt="logo"></div>
                     </div>
                 </div>
@@ -165,15 +172,14 @@
         </div>
     </section>
 
-
-    <!-- aboutUsssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+    <!-- aboutUs -->
     <section class="about-area ptb-100">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
                     <div class="about-image"><img src="../images/aboutUs.jpg" alt="image" class="rounded-10">
                         <div class="video-box">
-                            <div class="video-btn"><i class="fa-solid fa-play"></i></div>
+                            <div class="video-btn"><i class="pe-7s-play"></i></div>
                         </div>
                     </div>
                 </div>
@@ -199,13 +205,13 @@
                         <div class="about-text">
                             <h4>Our Mission</h4>
                             <ul>
-                                <li><i class="fa-solid fa-circle-check"></i>Lorem Ipsum is simply dummy text of the
+                                <li><i class="pe-7s-check"></i>Lorem Ipsum is simply dummy text of the
                                     printing and
                                     typesetting industry.</li>
-                                <li><i class="fa-solid fa-circle-check"></i>It is a long established fact that a reader
+                                <li><i class="pe-7s-check"></i>It is a long established fact that a reader
                                     will be
                                     distracted by the readable content of a page when looking at its layout.</li>
-                                <li><i class="fa-solid fa-circle-check"></i>Contrary to popular belief, Lorem Ipsum is
+                                <li><i class="pe-7s-check"></i>Contrary to popular belief, Lorem Ipsum is
                                     not simply
                                     random text. It has roots in a piece of classical Latin literature.</li>
                             </ul>
@@ -230,33 +236,33 @@
                 <div class="work-process-list">
                     <div class="single-work-process">
                         <div class="icon">
-                            <i class="fa-solid fa-display"></i>
+                            <i class="pe-7s-display1"></i>
                         </div>
                         <h3>Surface</h3>
                         <span>Visual Design</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="icon"><i class="pe-7s-display2"></i></div>
                         <h3>Skeleton</h3>
                         <span>Wireframes</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-check-double"></i></div>
+                        <div class="icon"><i class="pe-7s-airplay"></i></div>
                         <h3>Structure</h3>
                         <span>Screen Flow</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-clipboard"></i></div>
+                        <div class="icon"><i class="pe-7s-note2"></i></div>
                         <h3>Scope</h3>
                         <span>Requirements</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="icon"><i class="pe-7s-light"></i></div>
                         <h3>User Research</h3>
                         <span>User Research</span>
                     </div>
                     <div class="single-work-process">
-                        <div class="icon"><i class="fa-solid fa-sun"></i></div>
+                        <div class="icon"><i class="pe-7s-sun"></i></div>
                         <h3>Implement</h3>
                         <span>Lunch/Analyse</span>
                     </div>
@@ -265,7 +271,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- We always try to understand users expectation -->
     <section class="funfacts-area ptb-100 bg-fcfbfb">
@@ -279,28 +284,28 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6">
                     <div class="funfact">
-                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="icofont-checked"></i>
                         <h3>980+</h3>
                         <p>Completed Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="funfact">
-                        <i class="fa-solid fa-heart"></i>
+                        <i class="icofont-ui-love"></i>
                         <h3>950+</h3>
                         <p>Happy Clients</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="funfact">
-                        <i class="fa-solid fa-list-check"></i>
+                        <i class="icofont-tasks"></i>
                         <h3>780+</h3>
                         <p>Ongoing Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="funfact">
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="icofont-win-trophy"></i>
                         <h3>70+</h3>
                         <p>Winning Awards</p>
                     </div>
@@ -314,8 +319,7 @@
         </div>
     </section>
 
-
-    <!------------- Latest News -------------->
+    <!-- Latest News -->
     <section class="blog-area ptb-100">
         <div class="container">
             <div class="section-title">
@@ -327,7 +331,7 @@
             <div class="owl-carousel blog-slides owl-theme">
                 <div class="single-blog-item">
                     <div class="blog-image">
-                        <a href="/blog-details/">
+                        <a href="/">
                             <img src="../images/lastestNews1.jpg" alt="image"></a>
                         <div class="post-tag"><a href="/blog/">Agency</a></div>
                     </div>
@@ -410,16 +414,15 @@
 
     </section>
 
-
-    <!-- footerrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+    <!-- footer -->
     <footer class="footer-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-3">
                     <div class="single-footer-widget">
                         <div class="logo">
-                            <a href="">
-                                <img src="../images/logo.png" alt="image">
+                            <a class="footer-logo" style="width: 110px;" href="index.html">
+                                <img src="../images/compar-logo-gradiant.svg" alt="">
                             </a>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -465,12 +468,12 @@
                     <div class="single-footer-widget">
                         <h3>Get in Touch</h3>
                         <ul class="get-in-touch">
-                            <li class="mb-4 d-flex align-items-center"><i class="fa-solid fa-house"></i><span>2750
-                                    Quadra Street Victoria, Canada.</span> </li>
-                            <li class="mb-4"><i class="fa-solid fa-phone-volume"></i><a
+                            <li class="mb-4 d-flex align-items-center"><i class="icofont-home"></i>2750
+                                Quadra Street Victoria, Canada.</li>
+                            <li class="mb-4"><i class="icofont-live-support"></i><a
                                     href="tel:+324-9442-515">+324-9442-515</a>
                             </li>
-                            <li class="mb-4"><i class="fa-solid fa-envelope"></i><a
+                            <li class="mb-4"><i class="icofont-envelope"></i><a
                                     href="mailto:hello@pungent.com">hello@pungent.com</a>
                             </li>
                         </ul>
@@ -487,6 +490,12 @@
         </div>
     </footer>
 
+    <!-- scroll-to-top -->
+    <div onclick="topFunction()" id="myBtn" title="Go to top" class="scroll-to-top">
+        <i class="pe-7s-angle-up"></i>
+    </div>
+
 </body>
+
 
 </html>

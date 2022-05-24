@@ -1,5 +1,6 @@
 $purple: #c152c9;
 $gradient-color: #8c4b91;
+
 * {
     box-sizing: border-box;
 }
@@ -13,6 +14,7 @@ $gradient-color: #8c4b91;
 
     .logo {
         margin-bottom: 25px;
+
 
         a {
             font-size: 24px;
@@ -106,7 +108,7 @@ $gradient-color: #8c4b91;
                 bottom: 0;
                 width: 55px;
                 height: 3px;
-                background:$gradient-color;
+                background: $gradient-color;
             }
 
             &::after {
@@ -154,7 +156,7 @@ $gradient-color: #8c4b91;
                         left: 0;
                         top: 50%;
                         transform: translateY(-50%);
-                        background:$gradient-color;
+                        background: $gradient-color;
                         width: 10px;
                         height: 2px;
                         opacity: 0;
@@ -171,12 +173,12 @@ $gradient-color: #8c4b91;
             list-style-type: none;
 
             li {
-                margin-bottom: 30px;
                 position: relative;
-                font-size: 16px;
 
-                &:first-child {
-                    margin-bottom: 10px;
+                padding-left: 50px;
+
+                &:nth-child(2) {
+                    padding-bottom: 12px;
                 }
 
                 i {
@@ -187,8 +189,8 @@ $gradient-color: #8c4b91;
                     background: $gradient-color;
                     border-radius: 50%;
                     text-align: center;
-                    margin-right: 10px;
-                    padding: 1px 8px;
+                    position: absolute;
+                    left: 0;
                 }
 
 
@@ -238,6 +240,3 @@ $gradient-color: #8c4b91;
     }
 
 }
-
-
-

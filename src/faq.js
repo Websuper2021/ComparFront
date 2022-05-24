@@ -18,3 +18,4 @@ import './vendors/bootstrap.bundle.js'
 import './vendors/owl-carousel/owl.carousel.min.js'
 import './vendors/particles.js'
 import './vendors/app.js'
+
