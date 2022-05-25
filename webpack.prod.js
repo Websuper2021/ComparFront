@@ -11,15 +11,30 @@ module.exports = (env) => {
       entry: {
          index: {
             import: "./src/index.js",
-            dependOn: ["shared"],
+            dependOn: ["shared", "sharedStyle", "sharedScript"],
          },
          blog: {
             import: "./src/blog.js",
-            dependOn: ["shared"],
+            dependOn: ["shared", "sharedStyle", "sharedScript"],
          },
+         faq: {
+            import: "./src/faq.js",
+            dependOn: ["shared", "sharedStyle", "sharedScript"],
+         },
+         contact: {
+            import: "src/contact.js",
+            dependOn: ["shared", "sharedStyle", "sharedScript"],
+         },
+         course: {
+            import: "./src/course.js",
+            dependOn: ["shared", "sharedStyle", "sharedScript"],
+         },
+         about: {
+            import: "./src/about.js",
+            dependOn: ["shared", "sharedStyle", "sharedScript"],
+         },
+
          shared: [
-       
-            "./src/css/style.scss",
             "./src/vendors/bootstrap.css",
             "./src/vendors/owl-carousel/assets/owl.carousel.css",
             "./src/vendors/owl-carousel/assets/owl.theme.default.min.css",
@@ -27,16 +42,22 @@ module.exports = (env) => {
             "./src/vendors/icofont.css",
             "./src/vendors/helper.css",
 
-            "./src/js/app.js",
-            "./src/js/navbar.js",
-            "./src/js/scroll-to-top.js",
-            "./src/js/toggle.js",
-
             "./src/vendors/jquery/jquery-3.6.0.min.js",
             "./src/vendors/bootstrap.bundle.js",
             "./src/vendors/owl-carousel/owl.carousel.min.js",
             "./src/vendors/particles.js",
             "./src/vendors/app.js",
+         ],
+
+         sharedStyle: [
+            "./src/css/style.scss",
+
+         ],
+         sharedScript: [
+            "./src/js/app.js",
+            "./src/js/navbar.js",
+            "./src/js/scroll-to-top.js",
+            "./src/js/toggle.js",
          ],
       },
       output: {
@@ -45,8 +66,7 @@ module.exports = (env) => {
          clean: true,
       },
       module: {
-         rules: [
-            {
+         rules: [{
                test: /\.js$/i,
                exclude: /(node_modules|bower_components)/,
                use: {
@@ -87,33 +107,71 @@ module.exports = (env) => {
             new CssMinimizerPlugin(),
             new ImageMinimizerPlugin({
                minimizer: {
-                 implementation: ImageMinimizerPlugin.imageminMinify,
-                 options: {
-                   plugins: [
-                     "imagemin-gifsicle",
-                     "imagemin-mozjpeg",
-                     "imagemin-pngquant",
-                     "imagemin-svgo",
-                   ],
-                 },
+                  implementation: ImageMinimizerPlugin.imageminMinify,
+                  options: {
+                     plugins: [
+                        "imagemin-gifsicle",
+                        "imagemin-mozjpeg",
+                        "imagemin-pngquant",
+                        "imagemin-svgo",
+                     ],
+                  },
                },
                loader: false,
-             }),
+            }),
          ],
       },
       plugins: [
-         new MiniCssExtractPlugin({
-            filename: "[name]/css/[name].css",
-            chunkFilename: "chunk/css/[name].chunk.css",
-            ignoreOrder: false,
+         new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: "src/pages/index.html",
+            chunks: ["index", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
          }),
-         new HtmlWebpackPlugin({  // Also generate a test.html
-            filename: 'index.html',
-            template: 'src/pages/index.html',
-            chunks: ['index', 'shared'],
-            inject: 'body',
-            minify: false
-          })
+         new HtmlWebpackPlugin({
+            filename: "faq.html",
+            template: "src/pages/faq.html",
+            chunks: ["faq", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
+         }),
+         new HtmlWebpackPlugin({
+            filename: "contact.html",
+            template: "src/pages/contact.html",
+            chunks: ["contact", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
+         }),
+         new HtmlWebpackPlugin({
+            filename: "course.html",
+            template: "src/pages/course.html",
+            chunks: ["course", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
+         }),
+
+         new HtmlWebpackPlugin({
+            filename: "blogDetail.html",
+            template: "src/pages/blogDetail.html",
+            chunks: ["blogDetail", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
+         }),
+         new HtmlWebpackPlugin({
+            filename: "blog.html",
+            template: "src/pages/blog.html",
+            chunks: ["blog", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
+         }),
+         new HtmlWebpackPlugin({
+            filename: "about.html",
+            template: "src/pages/about.html",
+            chunks: ["about", "shared","sharedStyle","sharedScript"],
+            inject: "body",
+            minify: false,
+         }),
       ],
    };
 };

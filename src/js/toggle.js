@@ -11,3 +11,5 @@ function toggleMenu(){
     menuToggle.classList.toggle('active')
     navbarNav.classList.toggle('active')
 }
+
+document.getElementById("toggleMenu").onclick=toggleMenu
