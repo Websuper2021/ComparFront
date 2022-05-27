@@ -39,11 +39,13 @@
     "sass": "^1.51.0",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
+    "vue-particles": "^1.0.9",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "jquery": "^3.6.0",
     "particles.js": "^2.0.0"
   }
 }

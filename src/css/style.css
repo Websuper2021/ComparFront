@@ -113,6 +113,7 @@
 
 .hero-banner .d-table .d-table-cell .main-banner-content .btn-primary::before {
   content: "";
+  border-radius: 5px;
   position: absolute;
   left: 0;
   top: 0;
@@ -695,6 +696,7 @@
 
 .navbar-area.sticky .navbar-collapse ul li a {
   color: black !important;
+  cursor: pointer;
 }
 
 .navbar-area.sticky .navbar-collapse ul li .dropdown-menu li a:hover {

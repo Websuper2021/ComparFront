@@ -1,5 +1,5 @@
-import "../vendors/jquery/jquery-3.6.0.min.js"
-import "../vendors/bootstrap.bundle.js"
-import "../vendors/owl-carousel/owl.carousel.min.js"
-import "../vendors/particles.js"
-import "../vendors/app.js"
+import "../vendors/bootstrap.bundle"
+import "../vendors/owl-carousel/owl.carousel.min"
+import "../vendors/particles"
+import "../vendors/app"
+

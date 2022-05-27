@@ -1,4 +1,5 @@
 const path = require("path");
+
 const {shared, sharedDynamic, HtmlWebpackPluginList} = require('./webpack.common')
 
 module.exports = (env) => {
@@ -12,6 +13,7 @@ module.exports = (env) => {
          filename: "[name]/js/[name].bundle.js",
          clean: true,
       },
+      
       module: {
          rules: [
             {
@@ -35,6 +37,7 @@ module.exports = (env) => {
             },
          ],
       },
+      
       mode: "development",
       devtool: "source-map",
       devServer: {
@@ -44,5 +47,7 @@ module.exports = (env) => {
          watchFiles: "./src",
       },
       plugins: [...HtmlWebpackPluginList],
+
+     
    };
 };
