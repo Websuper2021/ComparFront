@@ -2,6 +2,10 @@ const path = require("path");
 
 const {shared, sharedDynamic, HtmlWebpackPluginList} = require('./webpack.common')
 
+require('dotenv').config()
+
+const distPath = process.env.DIST_PATH || path.resolve(__dirname, "dist")
+
 module.exports = (env) => {
    return {
       entry: {
@@ -9,7 +13,7 @@ module.exports = (env) => {
          sharedDynamic: sharedDynamic,
       },
       output: {
-         path: path.resolve(__dirname, "dist"),
+         path: distPath,
          filename: "[name]/js/[name].bundle.js",
          clean: true,
       },
@@ -43,7 +47,7 @@ module.exports = (env) => {
       devServer: {
          port: 9000,
          hot: true,
-         static: "./dist",
+         static: distPath,
          watchFiles: "./src",
       },
       plugins: [...HtmlWebpackPluginList],
