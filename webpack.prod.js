@@ -3,7 +3,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const {shared, sharedDynamic, HtmlWebpackPluginList} = require('./webpack.common')
+require('dotenv').config()
 
+const distPath = process.env.DIST_PATH || path.resolve(__dirname, "dist")
 
 
 module.exports = (env) => {
@@ -13,7 +15,7 @@ module.exports = (env) => {
          sharedDynamic: sharedDynamic,
       },
       output: {
-         path: path.resolve(__dirname, "dist"),
+         path: distPath,
          filename: "[name]/js/[name].bundle.js",
          clean: true,
       },
