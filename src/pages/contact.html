@@ -146,26 +146,48 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="form-group"><input type="text" name="name" id="name" class="form-control"
-                                placeholder="Your Name" required=""></div>
+                        <div class="form-group">
+                            <input type="text" name="FullName" id="FullName" class="form-control"
+                                   placeholder="Ad, Soyad" required="">
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="form-group"><input type="email" name="email" id="email" class="form-control"
-                                placeholder="Your Email" required=""></div>
+                        <div class="form-group">
+                            <input type="email" name="Email" id="Email" class="form-control"
+                                   placeholder="Email" required="">
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="form-group"><input type="text" name="phone_number" id="phone_number"
-                                class="form-control" placeholder="Phone" required=""></div>
+                        <div class="form-group">
+                            <input type="text" name="PhoneNumber" id="PhoneNumber"
+                                   class="form-control" placeholder="Telefon" required="">
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="form-group"><input type="text" name="msg_subject" id="msg_subject"
-                                class="form-control" placeholder="Subject" required=""></div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <textarea name="Note" class="form-control" id="Note" rows="8"
+                                      placeholder="Qeyd" required=""></textarea>
+                        </div>
                     </div>
+                    <div class="form-group col-lg-6 col-md-12 text-start">
+                        <select name="CategoryId" class="form-control" required="">
+                             <option value=0 disabled selected>...Kateqoriya Seçin...</option>
+                        <option value="development" required="">Developmnet</option>
+                        <option value="design" required="">Design</option>
+                        </select>
+                    </div>
+                    <div class="form-check form-switch col-lg-6 text-start ps-5 d-flex">
+                        <div class="col-lg-6 text-start">
+                            <input class="form-check-input" type="checkbox" asp-for="DemoRequest">
+                            <label class="form-check-label" for="DemoRequest">Demo dərsdə iştirak</label>
+                        </div>
+                        <div class="col-lg-6 text-end">
+                            <div class="form-group"><input type="date" name="Date" id="Date"></div>
+                        </div>
+                    </div>
+    
                     <div class="col-lg-12 col-md-12">
-                        <div class="form-group"><textarea name="message" class="form-control" id="message" rows="8"
-                                placeholder="Your Message" required=""></textarea></div>
-                    </div>
-                    <div class="col-lg-12 col-md-12"><button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">Mesaj Göndər</button>
                     </div>
                 </div>
             </div>
