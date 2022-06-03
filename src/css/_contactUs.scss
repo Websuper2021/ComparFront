@@ -178,3 +178,24 @@ $gradient-color: #8c4b91;
         }
     }
 }
+
+.funfacts-area{
+    .animated{
+        opacity: 0;
+    }
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
