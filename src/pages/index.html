@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
     <script>
-        let counts=setInterval(updated);
+        let counts=setInterval(updated,15);
         let upto=0;
       function updated(){
     var count= document.getElementById("counter");
-    console.log(parseInt(count.textContent))
-        count.innerHTML=++upto;
-       if(upto===parseInt(count.textContent))
+    var countEnd= document.getElementById("endCount");
+    console.log(parseInt(endCount.textContent))
+        count.innerHTML=`${++upto}+`;
+       if(upto===parseInt(endCount.textContent))
        {
         clearInterval(counts);
        }
@@ -297,7 +298,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="funfact">
                         <i class="icofont-checked"></i>
-                        <h3 id="counter">980+</h3>
+                        <p class="d-none" id="endCount">300</p>
+                        <h3 id="counter"></h3>
                         <p>Completed Projects</p>
                     </div>
                 </div>
