@@ -79,6 +79,15 @@
         padding-top: 70px !important;
     }
 
+       //header
+       header{
+        .navbar-area{
+            .nav-item a {
+                font-size: 13px !important;
+            }
+        }
+    }
+
     //our work
     .ptb-100 .section-title h2 {
 
@@ -219,6 +228,10 @@
         .navbar-nav.active {
             display: block !important;
         }
+    }
+    //navbarInfo
+    .navbarInfo{
+        display: none;
     }
 
     //toggle-menu

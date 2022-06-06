@@ -10,3 +10,4 @@ window.addEventListener('scroll', () => {
         })
     }
 })
+console.log("dbd")

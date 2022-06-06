@@ -11,7 +11,7 @@ function animateValue(id, limit) {
 animateValue('value1', 984);
 animateValue('value2', 920);
 animateValue('value3', 802);
-animateValue('value4', 900);
+animateValue('value4', 1200);
 
 
 // const count = document.getElementById('funfacts');
