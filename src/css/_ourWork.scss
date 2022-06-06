@@ -143,21 +143,22 @@ $gradient-color: #8c4b91;
 
                
 
-                h3 {
-                    font-size: 20px;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    margin-top: 20px;
-                    margin-bottom: 5px;
-                    font-family: Saira, sans-serif;
-                    color: #18181b;
-                    line-height: 1.2;
-                }
+                // h3 {
+                //     font-size: 20px;
+                //     font-weight: 600;
+                //     text-transform: uppercase;
+                //     margin-top: 20px;
+                //     margin-bottom: 5px;
+                //     font-family: Saira, sans-serif;
+                //     color: #18181b;
+                //     line-height: 1.2;
+                // }
 
                 span {
                     display: block;
-                    color: #646464;
-                    font-size: 14px;
+                    color: black;
+                    font-weight: 600;
+                    font-size: 17px;
                 }
             }
         }
