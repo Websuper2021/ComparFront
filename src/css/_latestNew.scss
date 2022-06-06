@@ -39,7 +39,6 @@ $gradient-color: #8c4b91;
                     .blog-image {
                         position: relative;
                         overflow: hidden;
-
                         &:hover {
                             .post-tag {
                                 transform: translateY(15px);
@@ -59,8 +58,11 @@ $gradient-color: #8c4b91;
                                 display: block;
                                 width: 100%;
                                 -webkit-transform-style: preserve-3d;
-                                max-width: 100;
+                                max-width: 100%;
+                                max-height: 300px;
                                 vertical-align: middle;
+                                object-fit: cover;
+                                object-position: center;
 
                                 &:hover {}
                             }

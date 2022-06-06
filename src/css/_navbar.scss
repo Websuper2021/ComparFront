@@ -81,11 +81,8 @@ $gradient-color: #8c4b91;
 
     .navbar-collapse {
         ul li {
-
             a {
                 color: black !important;
-                cursor: pointer;
-
             }
 
             .dropdown-menu {
@@ -105,7 +102,7 @@ $gradient-color: #8c4b91;
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 15px;
+    padding-top: 40px;
     width: 100%;
     z-index: 999;
     height: auto;
@@ -213,19 +210,20 @@ $gradient-color: #8c4b91;
                             position: relative;
                             font-weight: 600;
                             font-size: 15px;
-                            padding: 15px;
+                            // padding: 15px;
 
                             &:hover::before {
                                 width: 60%;
                             }
 
+
                             &::before {
-                                bottom: -5px;
+                                bottom: 3px;
                                 width: 0;
                                 background: $gradient-color;
                                 height: 3px;
                                 transition: all .6s ease;
-                                left: 1px;
+                                left: 7px;
                                 content: "";
                                 position: absolute;
                             }
@@ -238,6 +236,10 @@ $gradient-color: #8c4b91;
                                 margin-left: -2px;
                                 margin-right: -2px;
                             }
+                        }
+
+                        a.active::before {
+                            width: 60%;
                         }
 
                         .dropdown-menu {

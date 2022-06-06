@@ -86,6 +86,9 @@ $gradient-color: #8c4b91;
                         border-radius: 50%;
                         transition: all .6s ease;
                     }
+                    i {
+                        line-height: unset;
+                    }
                 }
             }
         }

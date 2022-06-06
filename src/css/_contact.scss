@@ -15,9 +15,9 @@ $gradient-color: #8c4b91;
     text-align: center;
 
     h2 {
-        font-size: 36px;
+        font-size: 30px;
         margin-bottom: 30px;
-        font-weight: 700;
+        font-weight: 600;
         font-family: Saira, sans-serif;
         color: #18181b;
         margin-top: 0;
@@ -97,5 +97,12 @@ $gradient-color: #8c4b91;
             transition: all .6s ease;
         }
 
+    }
+    .text-end{
+  text-align: left !important;
+  padding-top: 10px;
+    }
+    .form-check{
+        padding-bottom: 30px;
     }
 }

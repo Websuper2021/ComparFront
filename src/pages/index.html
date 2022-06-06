@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
-    <script>
+    <!-- <script>
         let counts=setInterval(updated,15);
         let upto=0;
       function updated(){
@@ -20,21 +20,25 @@
         clearInterval(counts);
        }
       }
-    </script>
+    </script> -->
 </head>
 
 <body>
-    <!-- header -->
+ 
+    <!-- header --->
     <header>
+
         <div id="navbar" class="navbar-area navbar-style-2">
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container-fluid">
+
                     <a class="navbar-brand" style="width: 110px;" href="index.html">
                         <img src="../images/compar-logo-white.svg" class="white-logo" alt="logo">
                         <img src="../images/compar-logo-gradiant.svg" class="black-logo" alt="">
                     </a>
+                
 
-                    <button class="btn-navbar-toggler toggle-menu" id="toggleMenu" type="button">
+                    <button class="btn-navbar-toggler toggle-menu" onclick="toggleMenu()" type="button">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
@@ -42,8 +46,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav scroll">
-                            <li class="nav-item"><a class="nav-link" href="course.html">TƏDRİS PAKETLƏRİ
-                                <i class="icofont-thin-down"></i></a>
+                            <li class="nav-item"><a class="nav-link" href="/#">TƏDRİS PAKETLƏRİ
+                                    <i class="icofont-thin-down"></i></a>
                                 <ul class="dropdown-menu ">
                                     <li class="nav-item"><a class="nav-link" href="/portfolio/">Portfolio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/portfolio-details/">Portfolio
@@ -73,7 +77,7 @@
                             </li>
 
                             <li class="nav-item"><a class="nav-link">BLOQ
-                                <i class="icofont-thin-down"></i></a>
+                                    <i class="icofont-thin-down"></i></a>
                                 <ul class="dropdown-menu right-drop">
                                     <li class="nav-item"><a class="nav-link" href="blog.html">Bloq</a></li>
                                     <li class="nav-item"><a class="nav-link" href="blogDetail.html">Bloq Detail
@@ -90,15 +94,36 @@
             </nav>
         </div>
 
-        <div class="hero-banner overly hero-bg1" id="index-bg">
 
+        <div class="hero-banner overly hero-bg1" id="index-bg">
+               <!-- navbarInfo -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="navbarInfo">
+                            <div class="brk-header__element brk-header__element_skin-2 brk-header__item">
+                                <a href="/" class="brk-header__element--wrap">
+                                    <i class="fa fa-phone"></i>
+                                    <span class="brk-header__element--label font__weight-semibold">055 555 55 59</span>
+                                </a>
+                            </div>
+                            <div class="brk-header__element brk-header__element_skin-2 brk-header__item">
+                                <a href="#" class="brk-header__element--wrap">
+                                    <i class="fa fa-envelope"></i>
+                                    <span class="brk-header__element--label font__weight-medium">compar@gmail.com</span>
+                                </a>
+                            </div>
+                        </div>
+                 
+                    </div>
+                </div>
+            </div>
+            
             <div id="particles-js">
                 <div>
                     <canvas style="width:100%;height:100%" width="1837" height="556"></canvas>
                 </div>
             </div>
-
-
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
@@ -285,148 +310,157 @@
         </div>
     </section>
 
-    <!-- We always try to understand users expectation -->
-    <section class="funfacts-area ptb-100 bg-fcfbfb">
-        <div class="container">
-            <div class="section-title">
-                <h2>We always try to understand users expectation</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-6">
+   <!-- We always try to understand users expectation -->
+   <section class="funfacts-area ptb-100 bg-fcfbfb">
+    <div class="container">
+        <div class="section-title">
+            <h2>We always try to understand users expectation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.</p>
+        </div>
+
+        <div id="funfacts" class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+                <div class="animated" style="animation-duration: 1s;">
                     <div class="funfact">
                         <i class="icofont-checked"></i>
-                        <p class="d-none" id="endCount">300</p>
-                        <h3 id="counter"></h3>
+                        <h3 id="value1">100</h3>
                         <p>Completed Projects</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="funfact">
-                        <i class="icofont-ui-love"></i>
-                        <h3>950+</h3>
-                        <p>Happy Clients</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="funfact">
-                        <i class="icofont-tasks"></i>
-                        <h3>780+</h3>
-                        <p>Ongoing Projects</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="funfact">
-                        <i class="icofont-win-trophy"></i>
-                        <h3>70+</h3>
-                        <p>Winning Awards</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="animated" style="animation-duration: 1.5s;">
+                    <div class="funfact"><i class="icofont-ui-love"></i>
+                        <h3 id="value2">100</h3>
+                        <p>Completed Projects</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-cta-box">
-                <h3>Have any questions about us?</h3>
-                <p>Don't hesitate to contact us</p><a class="btn btn-primary" href="/contact/">Contact Us</a>
+            <div class="col-lg-3 col-sm-6">
+                <div class="animated" style="animation-duration: 2s;">
+                    <div class="funfact"><i class="icofont-tasks"></i>
+                        <h3 id="value3">100</h3>
+                        <p>Completed Projects</p>
+                    </div>
+                </div>
             </div>
-            <div class="map-bg"><img src="../images/contactUs.png" alt="map"></div>
-        </div>
-    </section>
-
-    <!-- Latest News -->
-    <section class="blog-area ptb-100">
-        <div class="container">
-            <div class="section-title">
-                <h2>Latest News</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-
-            <div class="owl-carousel blog-slides owl-theme">
-                <div class="single-blog-item">
-                    <div class="blog-image">
-                        <a href="/">
-                            <img src="../images/lastestNews1.jpg" alt="image"></a>
-                        <div class="post-tag"><a href="/blog/">Agency</a></div>
-                    </div>
-                    <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
-                        <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
-                            More<i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-                <div class="single-blog-item">
-                    <div class="blog-image">
-                        <a href="/blog-details/">
-                            <img src="../images/lastestNews1.jpg" alt="image"></a>
-                        <div class="post-tag"><a href="/blog/">Agency</a></div>
-                    </div>
-                    <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
-                        <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
-                            More<i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-                <div class="single-blog-item">
-                    <div class="blog-image">
-                        <a href="/blog-details/">
-                            <img src="../images/lastestNews1.jpg" alt="image"></a>
-                        <div class="post-tag"><a href="/blog/">Agency</a></div>
-                    </div>
-                    <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
-                        <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
-                            More<i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-                <div class="single-blog-item">
-                    <div class="blog-image">
-                        <a href="/blog-details/">
-                            <img src="../images/lastestNews1.jpg" alt="image"></a>
-                        <div class="post-tag"><a href="/blog/">Agency</a></div>
-                    </div>
-                    <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
-                        <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
-                            More<i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-                <div class="single-blog-item">
-                    <div class="blog-image">
-                        <a href="/blog-details/">
-                            <img src="../images/lastestNews1.jpg" alt="image"></a>
-                        <div class="post-tag"><a href="/blog/">Agency</a></div>
-                    </div>
-                    <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
-                        <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
-                            More<i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-                <div class="single-blog-item">
-                    <div class="blog-image">
-                        <a href="/blog-details/">
-                            <img src="../images/lastestNews1.jpg" alt="image"></a>
-                        <div class="post-tag"><a href="/blog/">Agency</a></div>
-                    </div>
-                    <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
-                        <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
-                            More<i class="fa-solid fa-angles-right"></i></a>
+            <div class="col-lg-3 col-sm-6">
+                <div class="animated" style="animation-duration: 2.5s;">
+                    <div class="funfact"><i class="icofont-win-trophy"></i>
+                        <h3 class="value4" id="value4">
+                            700
+                        </h3>
+                        <!-- <h3 id="endValue" style="display: none;">1001</h3>    -->
+                        <p>Completed Projects</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="contact-cta-box">
+            <h3>Have any questions about us?</h3>
+            <p>Don't hesitate to contact us</p><a class="btn btn-primary" href="/contact/">Contact Us</a>
+        </div>
+        <div class="map-bg"><img src="/src/images/contactUs.png" alt="map"></div>
+    </div>
+</section>
+
+  <!---- Latest News --->
+  <section class="blog-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>Latest News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.</p>
+        </div>
+
+        <div class="owl-carousel blog-slides owl-theme">
+            <div class="single-blog-item">
+                <div class="blog-image">
+                    <a href="/blog-details/">
+                        <img src="../images/lastestNews1.jpg" alt="image"></a>
+                    <div class="post-tag"><a href="/blog/">Agency</a></div>
+                </div>
+                <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
+                    <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
+                        More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="single-blog-item">
+                <div class="blog-image">
+                    <a href="/blog-details/">
+                        <img src="../images/lastestNews1.jpg" alt="image"></a>
+                    <div class="post-tag"><a href="/blog/">Agency</a></div>
+                </div>
+                <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
+                    <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
+                        More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="single-blog-item">
+                <div class="blog-image">
+                    <a href="/blog-details/">
+                        <img src="../images/lastestNews1.jpg" alt="image"></a>
+                    <div class="post-tag"><a href="/blog/">Agency</a></div>
+                </div>
+                <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
+                    <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
+                        More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="single-blog-item">
+                <div class="blog-image">
+                    <a href="/blog-details/">
+                        <img src="../images/lastestNews1.jpg" alt="image"></a>
+                    <div class="post-tag"><a href="/blog/">Agency</a></div>
+                </div>
+                <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
+                    <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
+                        More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="single-blog-item">
+                <div class="blog-image">
+                    <a href="/blog-details/">
+                        <img src="../images/lastestNews1.jpg" alt="image"></a>
+                    <div class="post-tag"><a href="/blog/">Agency</a></div>
+                </div>
+                <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
+                    <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
+                        More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="single-blog-item">
+                <div class="blog-image">
+                    <a href="/blog-details/">
+                        <img src="../images/lastestNews1.jpg" alt="image"></a>
+                    <div class="post-tag"><a href="/blog/">Agency</a></div>
+                </div>
+                <div class="blog-post-content"><span class="date">Feb 16, 2020</span>
+                    <h3><a href="/blog-details/">The Best Marketing top use Management Tools</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.</p><a class="read-more-btn" href="/blog-details/">Read
+                        More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-    </section>
+</section>
+
 
     <!-- footer -->
     <footer class="footer-area">
@@ -508,8 +542,8 @@
     <div id="myBtn" title="Go to top" class="scroll-to-top">
         <i class="pe-7s-angle-up"></i>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
 
 
