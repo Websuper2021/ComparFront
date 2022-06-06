@@ -21,6 +21,7 @@ $gradient-color: #8c4b91;
  
 
 
+
 .hero-banner {
     position: relative;
     height: 100vh;
@@ -183,4 +184,13 @@ $gradient-color: #8c4b91;
             }
         }
     }
+}
+
+.hero-banner1{
+    position: relative;
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../images/faq-bg.jpg);
 }
